@@ -9,5 +9,10 @@
   "editor.formatOnSave": true,
   // 默认格式化工具选择prettier
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "stylelint.validate": ["css", "less", "vue", "html", "scss"]
+  "stylelint.validate": [
+    "scss",
+    "css",
+    "vue",
+    "html"
+  ]
 }

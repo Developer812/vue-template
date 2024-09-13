@@ -1,15 +1,16 @@
 export default {
-  extends: ['stylelint-config-standard', 'stylelint-config-recommended-less', 'stylelint-config-standard-vue'],
-  plugins: ['stylelint-order'],
+  extends: ['stylelint-config-standard', 'stylelint-config-html/vue', 'stylelint-config-recess-order'],
+  plugins: ['stylelint-scss', 'stylelint-order'],
   // 不同格式的文件指定自定义语法
   overrides: [
     {
-      files: ['**/*.(vue|html|less|css)'],
-      customSyntax: 'postcss-less',
+      files: ['*.scss', '**/*.scss'],
+      customSyntax: 'postcss-scss',
     },
     {
-      files: ['**/*.(html|vue)'],
+      files: ['**/*.(html|vue|css)'],
       customSyntax: 'postcss-html',
+      extends: ['stylelint-config-standard-scss', 'stylelint-config-recommended-vue/scss'],
     },
   ],
   ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts', '**/*.json', '**/*.md', '**/*.yaml'],
