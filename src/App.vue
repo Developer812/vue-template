@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
-const msg = 12313231123
 </script>
 
 <template>
@@ -18,8 +17,8 @@ const msg = 12313231123
 
 <style scoped>
 .logo {
-  height: 6em;
   padding: 1.5em;
+  height: 6em;
   transition: filter 300ms;
   will-change: filter;
 }
