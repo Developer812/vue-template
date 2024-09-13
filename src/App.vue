@@ -18,8 +18,8 @@ const msg = 1231323
 
 <style scoped>
 .logo {
-  padding: 1.5em;
   height: 6em;
+  padding: 1.5em;
   transition: filter 300ms;
   will-change: filter;
 }
