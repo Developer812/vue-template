@@ -32,4 +32,3 @@ export default {
     'footer-leading-blank': [0, 'always'], // footer以空行开头
   },
 }
-

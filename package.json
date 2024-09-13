@@ -15,7 +15,9 @@
     "pre-commit": "lint-staged"
   },
   "dependencies": {
-    "vue": "^3.4.37"
+    "pinia": "^2.2.2",
+    "vue": "^3.4.37",
+    "vue-router": "^4.4.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
