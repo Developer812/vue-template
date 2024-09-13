@@ -8,7 +8,7 @@
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
     "lint:eslint": "eslint 'src/**/*.{js,ts,jsx,tsx,vue}' --ignore-pattern .gitignore --fix",
-    "lint:prettier": "prettier --write \"./**/*.{html,vue,ts,js,json,md}\"",
+    "lint:prettier": "prettier --write \"./**/*.{html,vue,ts,js}\"",
     "lint:stylelint": "stylelint \"./**/*.{css,less,vue,html}\" --fix",
     "lint:commitlint": "commitlint --config commitlint.config.js -e -V",
     "prepare": "husky",
