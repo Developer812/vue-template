@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
-const msg = 12313231
+const msg = 12313231123
 </script>
 
 <template>
