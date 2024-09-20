@@ -1,5 +1,9 @@
 export default {
-  extends: ['stylelint-config-standard', 'stylelint-config-html/vue', 'stylelint-config-recess-order'],
+  extends: [
+    'stylelint-config-standard',
+    'stylelint-config-html/vue',
+    'stylelint-config-recess-order',
+  ],
   plugins: ['stylelint-scss', 'stylelint-order'],
   // 不同格式的文件指定自定义语法
   overrides: [
@@ -10,10 +14,21 @@ export default {
     {
       files: ['**/*.(html|vue|css)'],
       customSyntax: 'postcss-html',
-      extends: ['stylelint-config-standard-scss', 'stylelint-config-recommended-vue/scss'],
+      extends: [
+        'stylelint-config-standard-scss',
+        'stylelint-config-recommended-vue/scss',
+      ],
     },
   ],
-  ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts', '**/*.json', '**/*.md', '**/*.yaml'],
+  ignoreFiles: [
+    '**/*.js',
+    '**/*.jsx',
+    '**/*.tsx',
+    '**/*.ts',
+    '**/*.json',
+    '**/*.md',
+    '**/*.yaml',
+  ],
   rules: {
     'no-descending-specificity': null, // 禁止在具有较高优先级的选择器后出现被其覆盖的较低优先级的选择器
     'selector-pseudo-element-no-unknown': [

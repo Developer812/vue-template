@@ -1,12 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import dayjs from 'dayjs'
+import { ref } from 'vue'
+let time = ref()
+setInterval(() => {
+  time.value = dayjs().format('YYYY-MM-DD hh:mm:ss')
+}, 1000)
+</script>
 
 <template>
-  <div>home页面123</div>
+  <div>{{ time }}</div>
 </template>
-
-<style lang="scss" scoped>
-a {
-  width: 100px;
-  height: 100px;
-}
-</style>

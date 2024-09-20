@@ -9,9 +9,3 @@ import { RouterLink, RouterView } from 'vue-router'
   </div>
   <RouterView />
 </template>
-<style lang="scss" scoped>
-.a {
-  width: 100px;
-  height: 100px;
-}
-</style>
