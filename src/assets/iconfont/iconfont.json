@@ -1,0 +1,16 @@
+{
+  "id": "4690133",
+  "name": "no name",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "41706391",
+      "name": "icon_label_mine_plane_theme",
+      "font_class": "icon_label_mine_plane_theme",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    }
+  ]
+}
