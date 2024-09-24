@@ -1,6 +1,7 @@
 import tseslint from 'typescript-eslint'
 import js from '@eslint/js'
 import pluginVue from 'eslint-plugin-vue'
+import * as parserVue from 'vue-eslint-parser'
 
 export default [
   {
@@ -62,7 +63,26 @@ export default [
     plugins: {
       vue: pluginVue,
     },
-    languageOptions: { parserOptions: { parser: tseslint.parser } },
+    languageOptions: {
+      globals: {
+        $: 'readonly',
+        $$: 'readonly',
+        $computed: 'readonly',
+        $customRef: 'readonly',
+        $ref: 'readonly',
+        $shallowRef: 'readonly',
+        $toRef: 'readonly',
+      },
+      parser: parserVue,
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+        extraFileExtensions: ['.vue'],
+        parser: '@typescript-eslint/parser',
+        sourceType: 'module',
+      },
+    },
     rules: { 'vue/multi-word-component-names': 'off' },
   },
   {
